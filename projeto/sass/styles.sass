@@ -27,14 +27,20 @@ body
     justify-content: space-between
     @include mixins.container
 
+    @include mixins.mobile
+        padding: 1.1rem
+        
     &-brand
         color: variables.$primary-color
         font-size: 3rem
 
     &-navbar
         ul
-            height: 100%
             @include mixins.flex-center
+            height: 100%
+
+            @include mixins.mobile
+                display: none
 
             li
                 margin: 0 1rem
@@ -67,6 +73,16 @@ body
     justify-content: space-between
     padding: 0
 
+    @include mixins.mobile
+        flex-direction: column
+
+    p
+        padding-bottom: 2rem
+        text-align: center
+
+        span
+            font-weight: bold
+            color: variables.$secondary-color
     &-card
         width: 31%
         height: 400px
@@ -74,6 +90,10 @@ body
         @include mixins.flex-center
         flex-direction: column
         color: variables.$primary-color
+    
+        @include mixins.mobile
+            width: 90%
+            margin-bottom: 6%
 
         &-title
             font-size: 2rem
@@ -118,12 +138,3 @@ body
 
     #card-9
         @include mixins.bg-img("decoracao.jpg")
-
-
-footer
-    text-align: center
-    padding-bottom: 2rem
-    
-    span
-        font-weight: bold
-        color: variables.$secondary-color

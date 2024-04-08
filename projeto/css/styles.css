@@ -28,15 +28,25 @@ body ul {
   padding: 1.7rem 0;
   margin: 0 auto;
 }
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
 .header-brand {
   color: #fff;
   font-size: 3rem;
 }
 .header-navbar ul {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header-navbar ul {
+    display: none;
+  }
 }
 .header-navbar ul li {
   margin: 0 1rem;
@@ -73,6 +83,19 @@ body ul {
   justify-content: space-between;
   padding: 0;
 }
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery p {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.gallery p span {
+  font-weight: bold;
+  color: #20C997;
+}
 .gallery-card {
   width: 31%;
   height: 400px;
@@ -82,6 +105,12 @@ body ul {
   justify-content: center;
   flex-direction: column;
   color: #fff;
+}
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
 }
 .gallery-card-title {
   font-size: 2rem;
@@ -216,15 +245,6 @@ body ul {
   background-size: 110%;
   filter: grayscale(0%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/decoracao.jpg");
-}
-
-footer {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-footer span {
-  font-weight: bold;
-  color: #20C997;
 }
 
 /*# sourceMappingURL=styles.css.map */
