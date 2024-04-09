@@ -88,14 +88,6 @@ body ul {
     flex-direction: column;
   }
 }
-.gallery p {
-  padding-bottom: 2rem;
-  text-align: center;
-}
-.gallery p span {
-  font-weight: bold;
-  color: #20C997;
-}
 .gallery-card {
   width: 31%;
   height: 400px;
